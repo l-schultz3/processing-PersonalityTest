@@ -113,14 +113,12 @@ void nextImage() {
 }
 
 void getResults() {
-  for (int i = 0; i < responses.length; i++) {
-    for (int j = 0; j < imageData.length; j++) {
-      for (int k = 0; k < imageData[j].length; k++) {
-        if (imageData[j][k] == 1) {
-          responses[i] += imageResponse[j];
-        } else {
-          responses[i] -= imageResponse[j];
-        }
+  for (int i = 0; i < imageData.length; i++) {
+    for (int j = 0; j < imageData[i].length; j++) {
+      if (imageData[i][j] == 1) {
+        responses[j] += imageResponse[i];
+      } else {
+        responses[j] -= imageResponse[i];
       }
     }
   }
