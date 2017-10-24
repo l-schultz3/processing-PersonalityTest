@@ -10,9 +10,13 @@ PImage image9;
 PImage image10;
 PImage image11;
 PImage image12;
+PImage image13;
+PImage image14;
+PImage image15;
+PImage image16;
 
-PImage[] images = {image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12};
-int[] imageResponse = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+PImage[] images = {image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16};
+int[] imageResponse = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 int[][] imageData = {{2, 1, 2, 2, 2, 1}, 
                      {2, 2, 1, 1, 1, 1}, 
                      {1, 1, 2, 2, 1, 1}, 
@@ -39,6 +43,10 @@ void loadImages() {
   image10 = loadImage("image10.jpg");
   image11 = loadImage("image11.png");
   image12 = loadImage("image12.jpg");
+  image13 = loadImage("image13.jpg");
+  image14 = loadImage("image14.jpg");
+  image15 = loadImage("image15.jpg");
+  image16 = loadImage("image16.jpg");
   
   images[0] = image1;
   images[1] = image2;
@@ -52,4 +60,8 @@ void loadImages() {
   images[9] = image10;
   images[10] = image11;
   images[11] = image12;
+  images[12] = image13;
+  images[13] = image14;
+  images[14] = image15;
+  images[15] = image16;
 }

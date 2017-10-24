@@ -1,9 +1,9 @@
-amount of people = one / more than one
-skin colour = white / POC
-facial hair = yes / no
-age = children / young / adult / senior
-famous = yes / no
-gender = male / female
+amount of people = one / more than one 		1 / 2
+skin colour = white / POC			1 / 2
+facial hair = no / yes				1 / 2
+age = children / young / adult / senior		1 / 2 / 3 / 4
+famous = no / yes				1 / 2
+gender = male / female				1 / 2
 
 image1
 amount of people = more than one
@@ -100,3 +100,35 @@ facial hair = no
 age = BLANK
 famous = no
 gender = female
+
+image13
+amount of people = more than one
+skin colour = white
+facial hair = no
+age = children
+famous = no
+gender = female
+
+image14
+amount of people = 
+skin colour = 
+facial hair = 
+age = 
+famous = 
+gender = 
+
+image15
+amount of people = 
+skin colour = 
+facial hair = 
+age = 
+famous = 
+gender = 
+
+image16
+amount of people = 
+skin colour = 
+facial hair = 
+age = 
+famous = 
+gender = 
