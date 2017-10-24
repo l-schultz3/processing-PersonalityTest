@@ -15,7 +15,7 @@ int buttonThreeX = 470;
 int buttonFourX = 535;
 int buttonFiveX = 600;
 
-int currentImage = 0;
+int currentImage;
 int responseCount = 0;
 
 int[] responses = {0, 0, 0, 0, 0, 0};
@@ -27,7 +27,7 @@ void setup() {
   
   loadImages();
   
-  //currentImage = int(random(0, images.length - 1));
+  currentImage = int(random(0, images.length - 1));
 }
 
 void draw() {
@@ -50,7 +50,7 @@ void draw() {
   text("3", buttonThreeX + 15, buttonY + 45);
   text("4", buttonFourX + 15, buttonY + 45);
   text("5", buttonFiveX + 15, buttonY + 45);
-  text(str(currentImage), buttonFiveX + 60, buttonY);
+  //text(str(currentImage), buttonFiveX + 60, buttonY);
   
   if ((mousePressed) && (start)) { 
     if (((mouseX >= buttonOneX) && (mouseX <= buttonOneX + buttonSize)) && ((mouseY >= buttonY) && (mouseY <= buttonY + buttonSize)) && (!pressed)) {
@@ -92,7 +92,7 @@ void draw() {
     background(255);
     text("Images with appear infront of you.\nRate them from 1 to 5.\n1 being the worst,\n5 being the best.", 0, 50);
     noFill();
-    rect(425, buttonY, 150, buttonSize);
+    rect(425, buttonY, 150, buttonSize, 3);
     text("start", 425, buttonY + 45);
   }
 }
@@ -102,13 +102,12 @@ void nextImage() {
     getResults();
     print(str(responses));
   } else {
-    currentImage += 1;
-    /*currentImage = int(random(0, images.length));
+    currentImage = int(random(0, images.length));
     if (imageResponse[currentImage] != 0) {
       while (imageResponse[currentImage] != 0) {
         currentImage = int(random(0, images.length - 1));
       }
-    }*/
+    }
   }
 }
 
