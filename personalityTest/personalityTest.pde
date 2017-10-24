@@ -1,6 +1,7 @@
 PFont mono;
 
 boolean pressed;
+boolean start = false;
 
 int imageX = 50;
 int imageY = 10;
@@ -14,7 +15,7 @@ int buttonThreeX = 470;
 int buttonFourX = 535;
 int buttonFiveX = 600;
 
-int currentImage = 0;
+int currentImage;
 int responseCount = 0;
 
 void setup() {
@@ -23,6 +24,8 @@ void setup() {
   textFont(mono);
   
   loadImages();
+  
+  currentImage = int(random(0, images.length - 1));
 }
 
 void draw() {
@@ -45,12 +48,9 @@ void draw() {
   text("3", buttonThreeX + 15, buttonY + 45);
   text("4", buttonFourX + 15, buttonY + 45);
   text("5", buttonFiveX + 15, buttonY + 45);
+  text(str(currentImage), buttonFiveX + 60, buttonY);
   
-  if (mousePressed) {
-        if (!pressed) {
-      print("\ncurrent image = " + str(currentImage));
-    }
-    
+  if ((mousePressed) && (start)) { 
     if (((mouseX >= buttonOneX) && (mouseX <= buttonOneX + buttonSize)) && ((mouseY >= buttonY) && (mouseY <= buttonY + buttonSize)) && (!pressed)) {
       imageResponse[currentImage] = 1;
       responseCount += 1;
@@ -77,14 +77,27 @@ void draw() {
       nextImage();
       pressed = true;
     }
+  } else if ((mousePressed) && (!start)) {
+    if (((mouseX >= 425) && (mouseX <= 425 + 150)) && ((mouseY >= buttonY) && (mouseY <= buttonY + buttonSize)) && (!pressed)) {
+      start = true;
+      pressed = true;
+    }
   } else {
     pressed = false;
+  }
+  
+  if (!start) {
+    background(255);
+    text("Images with appear infront of you.\nRate them from 1 to 5.\n1 being the worst,\n5 being the best.", 0, 50);
+    noFill();
+    rect(425, buttonY, 150, buttonSize);
+    text("start", 425, buttonY + 45);
   }
 }
 
 void nextImage() {
   if (responseCount == imageResponse.length) {
-    print("yes");
+    print(str(imageResponse));
   } else {
     currentImage = int(random(0, images.length));
     if (imageResponse[currentImage] != 0) {
