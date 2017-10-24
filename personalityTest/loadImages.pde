@@ -13,6 +13,18 @@ PImage image12;
 
 PImage[] images = {image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12};
 int[] imageResponse = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+int[][] imageData = {{2, 1, 2, 3, 2, 1}, 
+                     {2, 2, 1, 1, 1, 1}, 
+                     {1, 1, 2, 3, 1, 1}, 
+                     {1, 1, 1, 3, 2, 1},
+                     {1, 1, 2, 3, 2, 1},
+                     {1, 2, 1, 3, 2, 1},
+                     {1, 1, 2, 3, 2, 1},
+                     {1, 1, 2, 3, 2, 1},
+                     {1, 2, 1, 2, 2, 2},
+                     {1, 1, 1, 3, 1, 2},
+                     {2, 1, 1, 4, 1, 1},
+                     {2, 2, 1, 0, 1, 2}};
 
 void loadImages() {
   image1 = loadImage("image1.jpg");

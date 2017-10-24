@@ -15,8 +15,10 @@ int buttonThreeX = 470;
 int buttonFourX = 535;
 int buttonFiveX = 600;
 
-int currentImage;
+int currentImage = 0;
 int responseCount = 0;
+
+int[] responses = {0, 0, 0, 0, 0, 0};
 
 void setup() {
   size(1000, 800);
@@ -25,7 +27,7 @@ void setup() {
   
   loadImages();
   
-  currentImage = int(random(0, images.length - 1));
+  //currentImage = int(random(0, images.length - 1));
 }
 
 void draw() {
@@ -97,12 +99,28 @@ void draw() {
 
 void nextImage() {
   if (responseCount == imageResponse.length) {
-    print(str(imageResponse));
+    getResults();
+    print(str(responses));
   } else {
-    currentImage = int(random(0, images.length));
+    currentImage += 1;
+    /*currentImage = int(random(0, images.length));
     if (imageResponse[currentImage] != 0) {
       while (imageResponse[currentImage] != 0) {
         currentImage = int(random(0, images.length - 1));
+      }
+    }*/
+  }
+}
+
+void getResults() {
+  for (int i = 0; i < responses.length; i++) {
+    for (int j = 0; j < imageData.length; j++) {
+      for (int k = 0; k < imageData[j].length; k++) {
+        if (imageData[j][k] == 1) {
+          responses[i] += imageResponse[j];
+        } else {
+          responses[i] -= imageResponse[j];
+        }
       }
     }
   }

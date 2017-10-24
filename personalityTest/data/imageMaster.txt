@@ -1,0 +1,102 @@
+amount of people = one / more than one
+skin colour = white / POC
+facial hair = yes / no
+age = children / young / adult / senior
+famous = yes / no
+gender = male / female
+
+image1
+amount of people = more than one
+skin colour = white
+facial hair = yes
+age = adult
+famous = no
+gender = male
+
+image2
+amount of people = more than one
+skin colour = POC
+facial hair = no
+age = children
+famous = no
+gender = male
+
+image3
+amount of people = one
+skin colour = white
+facial hair = yes
+age = adult
+famous = no
+gender = male
+
+image4
+amount of people = one
+skin colour = white
+facial hair = no
+age = adult
+famous = yes
+gender = male
+
+image5
+amount of people = one
+skin colour = white
+facial hair = yes
+age = adult
+famous = yes
+gender = male
+
+image6
+amount of people = one
+skin colour = POC
+facial hair = no
+age = adult
+famous = yes
+gender = male
+
+image7
+amount of people = one
+skin colour = white
+facial hair = yes
+age = adult
+famous = yes
+gender = male
+
+image8
+amount of people = one
+skin colour = white
+facial hair = yes
+age = adult
+famous = yes
+gender = male
+
+image9
+amount of people = one
+skin colour = POC
+facial hair = no
+age = young
+famous = yes
+gender = female
+
+image10
+amount of people = one
+skin colour = white
+facial hair = no
+age = adult
+famous = no
+gender = female
+
+image11
+amount of people = more than one
+skin colour = white
+facial hair = no
+age = senior
+famous = no
+gender = male
+
+image12
+amount of people = more than one
+skin colour = POC
+facial hair = no
+age = BLANK
+famous = no
+gender = female
