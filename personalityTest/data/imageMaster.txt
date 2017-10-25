@@ -5,6 +5,15 @@ age = children / young / adult / senior		1 / 2 / 3 / 4
 famous = no / yes				1 / 2
 gender = male / female				1 / 2
 
+{1, 1, 1, 2, 1, 1}
+
+amount of people = more than one
+skin colour = white
+facial hair = yes
+age = young
+famous = yes
+gender = male
+
 image1
 amount of people = more than one
 skin colour = white
@@ -110,25 +119,137 @@ famous = no
 gender = female
 
 image14
-amount of people = 
-skin colour = 
-facial hair = 
-age = 
-famous = 
-gender = 
+amount of people = one
+skin colour = POC
+facial hair = no
+age = child
+famous = no
+gender = female
 
 image15
-amount of people = 
-skin colour = 
-facial hair = 
-age = 
-famous = 
-gender = 
+amount of people = one
+skin colour = POC
+facial hair = no
+age = child
+famous = no
+gender = male
 
 image16
-amount of people = 
-skin colour = 
-facial hair = 
-age = 
-famous = 
-gender = 
+amount of people = more than one
+skin colour = POC
+facial hair = no
+age = child
+famous = no
+gender = male
+
+image17
+amount of people = more than one
+skin colour = white
+facial hair = no
+age = adult
+famous = no
+gender = BLANK
+
+image18
+amount of people = more than one
+skin colour = white
+facial hair = no
+age = adult
+famous = no 
+gender = female
+
+image19
+amount of people = more than one
+skin colour = white
+facial hair = no
+age = adult
+famous = no
+gender = female
+
+image20
+amount of people = one
+skin colour = POC
+facial hair = yes
+age = adult
+famous = yes
+gender = male
+
+image21
+amount of people = one
+skin colour = POC
+facial hair = no
+age = child
+famous = yes
+gender = male
+
+image22
+amount of people = more than one
+skin colour = white
+facial hair = yes
+age = adult
+famous = no
+gender = male
+
+image23
+amount of people = more than one
+skin colour = white
+facial hair = no
+age = child
+famous = no
+gender = male
+
+image24
+amount of people = more than one
+skin colour = POC
+facial hair = no
+age = child
+famous = no
+gender = male
+
+image25
+amount of people = one
+skin colour = POC
+facial hair = no
+age = child
+famous = no
+gender = female
+
+image26
+amount of people = one
+skin colour = POC
+facial hair = no
+age = child
+famous = no
+gender = female
+
+image27
+amount of people = more than one
+skin colour = POC
+facial hair = no
+age = BLANK
+famous = no
+gender = female
+
+image28
+amount of people = one
+skin colour = white
+facial hair = yes
+age = adult
+famous = yes
+gender = male
+
+image29
+amount of people = one
+skin colour = white
+facial hair = yes
+age = adult
+famous = yes
+gender = male
+
+image30
+amount of people = one
+skin colour = white
+facial hair = yes
+age = adult
+famous = yes
+gender = male

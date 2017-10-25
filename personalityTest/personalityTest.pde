@@ -1,6 +1,6 @@
 PFont mono;
 
-boolean pressed;
+boolean pressed; //prevents the program from running code multiple times when the mouse is pressed
 boolean start = false;
 
 int imageX = 50;
