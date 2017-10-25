@@ -16,18 +16,18 @@ int buttonFourX = 535;
 int buttonFiveX = 600;
 
 int currentImage;
-int responseCount = 0;
+int responseCount;
 
 int[] responses = {0, 0, 0, 0, 0, 0};
 
 void setup() {
   size(1000, 800);
   mono = createFont("Monospaced", 50);
-  textFont(mono);
+  textFont(mono); //uses a monospace font for easier coordinates
   
   loadImages();
   
-  currentImage = int(random(0, images.length - 1));
+  currentImage = int(random(0, images.length - 1)); //start program with random image
 }
 
 void draw() {
@@ -50,7 +50,7 @@ void draw() {
   text("3", buttonThreeX + 15, buttonY + 45);
   text("4", buttonFourX + 15, buttonY + 45);
   text("5", buttonFiveX + 15, buttonY + 45);
-  //text(str(currentImage), buttonFiveX + 60, buttonY);
+  text(str(currentImage), buttonFiveX + 80, buttonY +45);
   
   if ((mousePressed) && (start)) { 
     if (((mouseX >= buttonOneX) && (mouseX <= buttonOneX + buttonSize)) && ((mouseY >= buttonY) && (mouseY <= buttonY + buttonSize)) && (!pressed)) {
@@ -89,29 +89,35 @@ void draw() {
   }
   
   if (!start) {
-    background(255);
-    text("Images with appear infront of you.\nRate them from 1 to 5.\n1 being the worst,\n5 being the best.", 0, 50);
-    noFill();
-    rect(425, buttonY, 150, buttonSize, 3);
-    text("start", 425, buttonY + 45);
+    if (responseCount == 0) {
+      background(255);
+      text("Images with appear infront of you.\nRate them from 1 to 5.\n1 being the worst,\n5 being the best.", 0, 50);
+      noFill();
+      rect(425, buttonY, 150, buttonSize, 3);
+      text("start", 425, buttonY + 45);
+    } else {
+      background(255);
+      text("end", 0, 50);
+    }
   }
 }
 
-void nextImage() {
-  if (responseCount == imageResponse.length) {
+void nextImage() { //function to move to next image
+  if (responseCount == imageResponse.length) { //if the program has gone through all images
     getResults();
     print(str(responses));
-  } else {
-    currentImage = int(random(0, images.length));
-    if (imageResponse[currentImage] != 0) {
-      while (imageResponse[currentImage] != 0) {
-        currentImage = int(random(0, images.length - 1));
+    start = false;
+  } else { //if there are more images to show
+    currentImage = int(random(0, images.length)); //select random image
+    if (imageResponse[currentImage] != 0) { //if that image has been show before
+      while (imageResponse[currentImage] != 0) { //this makes sure that it won't change to another image that has been shown
+        currentImage = int(random(0, images.length - 1)); //select another random image
       }
     }
   }
 }
 
-void getResults() {
+void getResults() { //gets the results at the end of the game
   for (int i = 0; i < imageData.length; i++) {
     for (int j = 0; j < imageData[i].length; j++) {
       if (imageData[i][j] == 1) {
