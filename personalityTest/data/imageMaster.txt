@@ -3,7 +3,7 @@ skin colour = white / POC			1 / 2
 age = children / young / adult / senior		1 / 2 / 3 / 4
 gender = male / female				1 / 2
 
-{1, 1, 2, 2}
+{1, 2, 1, 2}
 
 amount of people = more than one
 skin colour = white
@@ -276,5 +276,17 @@ gender = female
 image39
 amount of people = one
 skin colour = white
-ade = old
+age = old
+gender = female
+
+image40
+amount of people = one
+skin colour = white
+age = child
+gender = male
+
+image41
+amount of people = one
+skin colour = POC
+age = child
 gender = female

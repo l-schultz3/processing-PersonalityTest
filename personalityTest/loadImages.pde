@@ -37,8 +37,10 @@ PImage image36;
 PImage image37;
 PImage image38;
 PImage image39;
+PImage image40;
+PImage image41;
 
-PImage[] images = {image1, image2, /*image3, image4, image5,*/ image6, /*image7, image8,*/ image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23, image24, image25, image26, image27, image28, image29, image30, image31, image32, image33, image34, image35, image36, image37, image38, image39};
+PImage[] images = {image1, image2, /*image3, image4, image5,*/ image6, /*image7, image8,*/ image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23, image24, image25, image26, image27, image28, image29, image30, image31, image32, image33, image34, image35, image36, image37, image38, image39, image40, image41};
 int[] imageResponse = {};
 int[][] imageData = {{2, 1, 2, 1}, //1
                      {2, 2, 1, 1}, //2
@@ -78,7 +80,9 @@ int[][] imageData = {{2, 1, 2, 1}, //1
                      {2, 1, 0, 2},
                      {1, 1, 2, 2},
                      {1, 1, 2, 2},
-                     {1, 1, 2, 2}};
+                     {1, 1, 2, 2},
+                     {1, 1, 1, 1},
+                     {1, 2, 1, 2}};
 
 void loadImages() {
   for (int i = 0; i < images.length; i++) {
@@ -124,6 +128,8 @@ void loadImages() {
   image37 = loadImage("image37.jpg");
   image38 = loadImage("image38.jpg");
   image39 = loadImage("image39.jpg");
+  image40 = loadImage("image40.jpg");
+  image41 = loadImage("image41.jpg");
   
   images[0] = image1;
   images[1] = image2;
@@ -164,4 +170,6 @@ void loadImages() {
   images[31] = image37; //36
   images[32] = image38; //37
   images[33] = image39; //38
+  images[34] = image40; //39
+  images[35] = image41; //40
 }
