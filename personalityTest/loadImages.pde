@@ -28,39 +28,51 @@ PImage image27;
 PImage image28;
 PImage image29;
 PImage image30;
+PImage image31;
+PImage image32;
+PImage image33;
+PImage image34;
+PImage image35;
+PImage image36;
 
-PImage[] images = {image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23, image24, image25, image26, image27, image28, image29, image30};
+PImage[] images = {image1, image2, /*image3, image4, image5,*/ image6, /*image7, image8,*/ image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23, image24, image25, image26, image27, image28, image29, image30, image31, image32, image33, image34, image35, image36};
 int[] imageResponse = {};
-int[][] imageData = {{2, 1, 2, 1, 1}, //1
-                     {2, 2, 1, 1, 1}, //2
-                     {1, 1, 2, 1, 1}, //3
-                     {1, 1, 2, 2, 1}, //4
-                     {1, 1, 2, 2, 1}, //5
-                     {1, 2, 2, 2, 1}, //6
-                     {1, 1, 2, 2, 1}, //7
-                     {1, 1, 2, 2, 1}, //8
-                     {1, 2, 1, 2, 1}, //9
-                     {1, 1, 2, 1, 2}, //10
-                     {2, 1, 2, 1, 1}, //11
-                     {2, 2, 0, 1, 2}, //12
-                     {2, 1, 1, 1, 2}, //13
-                     {1, 2, 1, 1, 2}, //14
-                     {1, 2, 1, 1, 1}, //15
-                     {2, 2, 1, 1, 2}, //16
-                     {2, 1, 1, 2, 0}, //17
-                     {2, 1, 2, 1, 2}, //18
-                     {2, 1, 2, 1, 2}, //19
-                     {1, 2, 2, 2, 1}, //20
-                     {1, 2, 1, 2, 1}, //21
-                     {2, 1, 2, 1, 1}, //22
-                     {2, 1, 1, 1, 1}, //23
-                     {2, 2, 1, 1, 1}, //24
-                     {1, 2, 1, 1, 2}, //25
-                     {1, 2, 1, 1, 2}, //26
-                     {2, 1, 0, 1, 2}, //27
-                     {1, 1, 2, 2, 1}, //28
-                     {1, 1, 2, 2, 1}, //29
-                     {1, 1, 2, 2, 1}};
+int[][] imageData = {{2, 1, 2, 1}, //1
+                     {2, 2, 1, 1}, //2
+                     //{1, 1, 2, 1}, //3
+                     //{1, 1, 2, 1}, //4
+                     //{1, 1, 2, 1}, //5
+                     {1, 2, 2, 1}, //6
+                     //{1, 1, 2, 1}, //7
+                     //{1, 1, 2, 1}, //8
+                     {1, 2, 1, 1}, //9
+                     {1, 1, 2, 2}, //10
+                     {2, 1, 2, 1}, //11
+                     {2, 2, 0, 2}, //12
+                     {2, 1, 1, 2}, //13
+                     {1, 2, 1, 2}, //14
+                     {1, 2, 1, 1}, //15
+                     {2, 2, 1, 2}, //16
+                     {2, 1, 1, 0}, //17
+                     {2, 1, 2, 2}, //18
+                     {2, 1, 2, 2}, //19
+                     {1, 2, 2, 1}, //20
+                     {1, 2, 1, 1}, //21
+                     {2, 1, 2, 1}, //22
+                     {2, 1, 1, 1}, //23
+                     {2, 2, 1, 1}, //24
+                     {1, 2, 1, 2}, //25
+                     {1, 2, 1, 2}, //26
+                     {2, 1, 0, 2}, //27
+                     {1, 1, 2, 1}, //28
+                     {1, 1, 2, 1}, //29
+                     {1, 1, 2, 1}, //30
+                     {2, 2, 1, 0}, //31
+                     {2, 2, 1, 2}, //32
+                     {1 ,2, 2, 1},
+                     {2, 2, 2, 1},
+                     {2, 2, 1, 2},
+                     {2, 1, 0, 2}};
 
 void loadImages() {
   for (int i = 0; i < images.length; i++) {
@@ -97,15 +109,21 @@ void loadImages() {
   image28 = loadImage("image28.jpg");
   image29 = loadImage("image29.jpg");
   image30 = loadImage("image30.jpg");
+  image31 = loadImage("image31.jpg");
+  image32 = loadImage("image32.jpg");
+  image33 = loadImage("image33.jpg");
+  image34 = loadImage("image34.jpg");
+  image35 = loadImage("image35.jpg");
+  image36 = loadImage("image36.png");
   
   images[0] = image1;
   images[1] = image2;
-  images[2] = image3;
-  images[3] = image4;
-  images[4] = image5;
+  //images[2] = image3;
+  //images[3] = image4;
+  //images[4] = image5;
   images[5] = image6;
-  images[6] = image7;
-  images[7] = image8;
+  //images[6] = image7;
+  //images[7] = image8;
   images[8] = image9;
   images[9] = image10;
   images[10] = image11;
@@ -124,8 +142,14 @@ void loadImages() {
   images[23] = image24;
   images[24] = image25;
   images[25] = image26;
-  images[26] = image27; //26
-  images[27] = image28; //27
-  images[28] = image29; //28
-  images[29] = image30; //29
-};
+  images[26] = image27;
+  images[27] = image28;
+  images[28] = image29;
+  images[2] = image30; //29
+  images[3] = image31; //30
+  images[4] = image32; //31
+  images[6] = image33; //32
+  images[7] = image34; //33
+  images[29] = image35; //34
+  images[30] = image36; //35
+}

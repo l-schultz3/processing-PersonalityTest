@@ -1,8 +1,9 @@
 amount of people = one / more than one 		1 / 2
 skin colour = white / POC			1 / 2
 age = children / young / adult / senior		1 / 2 / 3 / 4
-famous = no / yes				1 / 2
 gender = male / female				1 / 2
+
+{1, 1, 0, 2}
 
 amount of people = more than one
 skin colour = white
@@ -219,3 +220,43 @@ skin colour = white
 age = adult
 famous = yes
 gender = male
+
+image31
+amount of people = more than one
+skin colour = POC
+age = children
+famous = no
+gender = BLANK
+
+image32
+amount of people = more than one
+skin colour = POC
+age = young
+famous = no
+gender = female
+
+image33
+amount of people = one
+skin colour = POC
+age = adult
+famous = yes
+gender = male
+
+image34
+amount of people = more than one
+skin colour = POC
+age = adult
+famous = no
+gender = male
+
+image35
+amount of people = more than one
+skin colour = POC
+age = young
+gender = female
+
+image36
+amount of people = more than one
+skin colour = white
+age = BLANK
+gender = female

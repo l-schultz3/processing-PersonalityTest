@@ -18,10 +18,14 @@ int buttonFiveX = 600;
 int currentImage;
 int responseCount;
 
-int[] responses = {0, 0, 0, 0, 0, 0};
+int[] responses = {0, 0, 0, 0};
 
 void setup() {
   size(1000, 800);
+  background(0);
+  fill(255);
+  text("LOADING...", 0, 50);
+  
   mono = createFont("Monospaced", 50);
   textFont(mono); //uses a monospace font for easier coordinates
   
@@ -122,7 +126,7 @@ void getResults() { //gets the results at the end of the game
     for (int j = 0; j < imageData[i].length; j++) {
       if (imageData[i][j] == 1) {
         responses[j] += imageResponse[i];
-      } else {
+      } else if (imageData[i][j] == 2) {
         responses[j] -= imageResponse[i];
       }
     }
